@@ -93,9 +93,27 @@
             <p>Fill out this form to reserve your books before coming to the store.</p>
 
             <fieldset>
-                <legend>Order Details</legend>
+                <legend>Order Form</legend>
+
                 <form>
-                <in
+                    <label for="name">Student Admission No:</label><br>
+                    <input type="text" id="name" name="name" placeholder="e.g., ST_1234"><br><br>
+
+                    <label for="book_type">Select Book to Reseve:</label><br>
+                    <select id="book_type" name="book_type">
+                        <option value="story">The Secret Island (Rs.850.00)</option>
+                        <option value="story">Madol Doova (Rs.600.00)</option>
+                        <option value="story">Weda athpotha(Rs.450.00)</option>
+                    </select><br><br>
+
+                    <label for = "Number of date"> Preferred Collection Date: </label><br>
+                    <input type="date" id="collection_date" name="collection_date"><br><br>
+
+                    <label for="books">Books to Reserve:</label><br>
+                    <textarea id="books" name="books" rows="4" cols="50"
+                        placeholder="List the books you want to reserve..."></textarea><br><br>
+
+                    <input type="submit" value="Submit Reservation">
                 </form>
             </fieldset>
 
